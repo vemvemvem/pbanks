@@ -1,0 +1,59 @@
+<p> Thanks Joe for your input ! Your phone is {{ phone }} running on {{ platform }}. Important thing we needed to capture is your battery
+capacity which is {{ battery_capacity }} mAh  </p>
+{{!-- <p> Your platform is {{ platform }} <p>
+<p> Your battery capacity is {{ battery_capacity }} <p> --}}
+{{!-- <form method="POST" action="phone_details">
+<input type="hidden" value={{ phone }} name="phone">
+<button>Phone details</button>
+</form> --}}
+
+      
+<p> How many charges do you need ?</p>
+<form method="POST" action="page_3">
+
+<div class="container">
+<div class="left-align">
+
+<input type="radio" value=1 name="charges" id="radio1"/>
+<label for="radio1"> (> 1) Less than one full charge</label><br>
+
+<input type="radio" value=2 name="charges" id="radio2"/>
+<label for="radio2"> (1 - 2) Between one a two full charges </label><br>
+
+
+<input type="radio" value=3 name="charges" id="radio3"/>
+<label for="radio3"> (2 <) More than two full charges</label><br>
+
+<br>
+<div class="valign-wrapper"><button type="submit" class="btn waves-effect waves-light">Submit </button></div>
+
+
+<p> Could you explain the differences ?</p>
+
+<ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">filter_drama</i>(> 1) Less than one full charge</div>
+      <div class="collapsible-body"><span> Portable batteries in this category are very light, small and inexpensive. Downside to this category of powerbanks is that you need to charge it nearly after every use. This category of powerbanks is often called "lipstick" as it is resemblinga lipstick with its' size & shape</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">place</i>(1 - 2) Between one a two full charges</div>
+      <div class="collapsible-body"><span>Powerbanks in this category are moderately light, and slightly larger than "lipstick" powerbanks. However, they are more reliable with their battery capacity. Also, you would not need to charge it as often. This is most popular powerbank category</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>(2 <) More than two full charges</div>
+      <div class="collapsible-body"><span>Powerbanks in this category will be heavier and larger than your {{ phone}}. Biggest advantage is of course the capacity. These are great for people who travel, want to charge multiple devices or spend significant amount of time playing games</span></div>
+    </li>
+  </ul>
+
+
+
+</div>
+</div>
+</form>
+
+
+{{!-- <br>
+<form method="GET" action="page_1">
+<button> Back </button>
+</form>
+ --}}

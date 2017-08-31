@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="/js/phones.js"></script>
+<style>
+.content {display:none;}
+</style>
+
+
+<meta charset="utf-8">
+<title> {{ title }} </title>
+
+
+{{!-- Local CSS --}}
+
+{{!-- <link rel="stylesheet" type="text/css" href="/stylesheets/main.css"> --}}
+<link rel="stylesheet" href="stylesheets/materialize.css">
+
+
+
+
+{{!-- MaterializeCSS CDN --}}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+
+
+{{!-- Fonts  --}}
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+{{!-- <meta name="viewport" content="width=device width,maximum scale=1.0, initial scale=0.5"> --}}
+</head>
+<body>
+
+<script>
+$(function() {
+        console.log("Hello")
+        $(".preload").fadeOut(500,function(){
+        $(".content").fadeIn(750);
+      });
+    });
+</script>
+
+<div class="container">
+
+{{!-- <div style="width:400" class="center-align"> --}}
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo">somedomain.com</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">FAQ</a></li>
+        <li><a href="badges.html">Feedback</a></li>
+        <li><a href="collapsible.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+                                                
+  <div class="center">
+  <div class="card-panel hoverable">
+
+<div class="preload">
+    <div class="preloader-wrapper big active">
+      <div class="spinner-layer spinner-blue">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+</div>
+</div>
+
+<div class="content">
+
+{{{ body }}}
+
+</div>
+</div>
+</div>
+                                                
+<footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Purpose</h5>
+                <p class="grey-text text-lighten-4">This site was designed to help people choose right portable battery for their needs</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Quick links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">What is a powerbank?</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Powerbank buying guide</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Best powerbanks</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2017 somedomain.com
+            <a class="grey-text text-lighten-4 right" href="#!">Privacy Policy</a>
+            <a class="grey-text text-lighten-4 right" href="#!">Terms & Conditions&nbsp;&nbsp;</a>
+            </div>
+          </div>
+        </footer>
+
+</div>
+</div>
+</body>
+</html>

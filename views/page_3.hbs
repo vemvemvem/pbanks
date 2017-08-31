@@ -1,0 +1,31 @@
+<p> Your phone is {{ phone }} </p>
+<p> You wanted {{ charges }} charges </p>
+<p> The width is {{ width_mm }} mm </p>
+<p> The height is {{ height_mm }} mm </p>
+
+<p> Here are your results </p>
+
+<ul>One</ul>
+<article class="item">
+<img src="/images/square.png" width="{{width_mm}}" height="{{height_mm}}">
+<img src="/images/square.png" width="100" height="100">
+</article>
+
+<ul>Two</ul>
+<article class="item">
+<img src="/images/square.png" width="{{width_mm}}" height="{{height_mm}}">
+<img src="/images/square.png" width="100" height="100">
+</article>
+
+<ul>Three</ul>
+<article class="item">
+<img src="/images/square.png" width="{{width_mm}}" height="{{height_mm}}">
+<img src="/images/square.png" width="100" height="100">
+</article>
+
+<br>
+<form method="POST" action="page_2">
+<input type="hidden" value="{{ phone }}" name="phone">
+<button> Back </button>
+</form>
+

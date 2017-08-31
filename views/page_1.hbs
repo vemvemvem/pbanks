@@ -1,0 +1,64 @@
+{{!-- <p> What mobile phone do you use ? </p> --}}
+
+
+{{!-- <input list="phones">
+<form method="POST" action="page_1_submit">
+<datalist id="phones">
+<option value="Archos Elements 50 Oxygen">
+<option value="Alcatel One Touch Idol S OT-6034M">
+</datalist>
+<input type="submittt" name="phone">
+</form> --}}
+
+<script src="routes.js"></script>
+<script src="/js/phones.js"></script>
+
+
+
+{{!-- <form method="POST" action="page_2">
+<select name="phone">
+  <option value="Archos Elements 50 Oxygen">Archos Elements 50 Oxygen</option>
+  <option value="Alcatel One Touch Idol S OT-6034M">Alcatel One Touch Idol S OT-6034M</option>
+</select>
+<input type="submit" value="Submit">
+</form>
+
+
+
+<br>
+<form method="GET" action="/">
+<button id="buttonBack" onclick="myFunction()"> Back </button>
+</form> --}}
+
+<div class="content">
+
+<form method="POST" action="page_2">
+    <div class="row">
+    <div class="col s12">
+      <div class="row">
+        <div class="input-field col s10">
+          <i class="material-icons prefix">stay_current_portrait</i>
+          <input name="phone" type="text" id="autocomplete" autocomplete="off" class="autocomplete">
+          <label for="autocomplete">What mobile phone do you use ?</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <input type="submit" value="Submit" class="btn waves-effect waves-light">
+ </form>
+
+ <p></p>
+
+<button id="any" class="btn waves-effect waves-light" onclick="myFunction()"> Back </button>
+
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function () {$('input.autocomplete').autocomplete({
+            data: x });});
+
+
+// var json = require('')
+
+</script>
+
